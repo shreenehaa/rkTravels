@@ -1,0 +1,38 @@
+form{
+    width: 500px;
+}
+input{
+    border:1px solid black;
+}
+input[type="text"] {
+    width: 200px; /* Set the desired width */
+    height: 30px; /* Set the desired height */
+  }
+ 
+  .i1{
+    margin-top: 9px;
+  }
+  .i2{
+    margin-top: -14px;
+  }
+  .i3{
+    margin-top: -19px;
+  }
+  .i4{
+    margin-top: -27px;
+  }
+  .i5{
+    margin-top: -25px;
+  }
+  .i6{
+    margin-top: -30px;
+  }
+  .i7{
+    margin-top: -35px;
+  }
+
+
+.custom-button {
+  color: white; /* Set the button text color to white */
+  background-color: #002D82; /* Set the button background color to #002D82 */
+}

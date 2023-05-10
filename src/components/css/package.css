@@ -1,0 +1,27 @@
+.card-container {
+    float: left;
+    display: flex;
+    flex-direction: row; /* set the direction to row */
+    justify-content: space-between; /* distribute the space between the cards */
+    align-items: left; /* center the cards along the cross axis */
+    padding: 23px;
+  }
+  
+  .card12 {
+    
+    width: 350px !important;
+    height: 500px !important;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .list-group-item{
+    align-items: left;
+    
+  }
+  .fa-clock,.fa-thumbtack{
+    font-size: 1rem;
+    color: #001e6b;
+  }
+  

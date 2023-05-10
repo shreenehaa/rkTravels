@@ -1,0 +1,24 @@
+img{
+    width: 50%;
+    height: 50%;
+}
+span{
+    font-size: 19px;
+}
+.card_page{
+    height: 70% !important;
+width: 50% !important;
+}
+textarea {
+    margin: 10px;
+    line-height: 1.5;
+    width: 100%;
+    height: 80% ;
+   
+    border-style: none;
+    border: none; /* hide the border */
+    overflow: hidden; /* hide the scrollbar */
+
+}
+
+/* Add a border for visibility */
