@@ -11,6 +11,7 @@ const Package=require('./package')
 const Login=require('./admin')
 const user_data=require('./user')
 const Book=require('./book')
+const nodemailer = require('nodemailer');
 const connectDb=()=>{
     mongoose.connect('mongodb://127.0.0.1:27017/consultant')
     .then(()=>{
@@ -58,6 +59,9 @@ app.get('/booking/get',async (req,res)=>{
 
 })
 
+
+
+
 app.put('/booking/update/:id', async (req, res) => {
   try {
     const { id } = req.params;
@@ -73,6 +77,34 @@ app.put('/booking/update/:id', async (req, res) => {
 
     if (!updatedBooking) {
       return res.status(404).json({ error: 'Booking not found' });
+    }
+
+    // Send email notification based on the updated status
+    if (status === 'approved' || status === 'rejected') {
+      const transporter = nodemailer.createTransport({
+        // Configure your email provider settings here
+        // Example using Gmail SMTP:
+        service: 'Gmail',
+        auth: {
+          user: 'shreenehaam.20it@kongu.edu',
+          pass: '242205msN',
+        },
+      });
+
+      const mailOptions = {
+        from: 'shreenehaam.20it@kongu.edu',
+        to: updatedBooking.email,
+        subject: `Booking ${status === 'approved' ? 'Approved' : 'Rejected'}`,
+        text: `Dear ${updatedBooking.name},\n\nYour booking with ID ${updatedBooking.id} has been ${status === 'approved' ? 'approved' : 'rejected'}.\n\nThank you.`,
+      };
+
+      transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          console.error('Error sending email:', error);
+        } else {
+          console.log('Email sent:', info.response);
+        }
+      });
     }
 
     // Send the updated booking as the response
@@ -146,6 +178,7 @@ app.get('/packages/get/:buttonValue',async (req,res)=>{
                
       
           app.post("/Signup_user", async (req, res) => {
+            console.log("hiiiiiiiiiiii");
             const { email, password,fname,lname,phone,country } = req.body;
             const data = {
               email: email,
@@ -160,6 +193,7 @@ app.get('/packages/get/:buttonValue',async (req,res)=>{
             
             try {
               const check = await user_data.findOne({ email: email });
+              console.log(email)
               if (check) {
                 res.json("exist");
               } else {
@@ -188,7 +222,23 @@ app.get('/packages/get/:buttonValue',async (req,res)=>{
               res.json("not exist");
             }
           });
-                 
+ 
+          app.get('/booking/search/get/:date', (req, res) => {
+            const selectedDate = new Date(req.params.date);
+            const startOfDay = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate());
+            const endOfDay = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate() + 1);
+          
+            Book.find({ from: { $gte: startOfDay, $lt: endOfDay } })
+              .then((books) => {
+                res.json(books);
+              })
+              .catch((error) => {
+                console.log(error);
+                res.status(500).json({ error: 'An error occurred' });
+              });
+          });
+          
+                
 
 
 

@@ -142,9 +142,6 @@ const [isHoveredc3, setIsHoveredc3] = useState(false);
   const imageStylec3 = {
     height : '120px',
     width:'120px',
-    
-    
-
 }
 
 
@@ -167,20 +164,20 @@ const [isHoveredc3, setIsHoveredc3] = useState(false);
       
     </div>
     <div class="col-md-10">
-    <div className="card-container card2">
+    <div className="card-container card2" style={{paddingLeft:'25px'}}>
         
       <div className="card card1" onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      style={{ transform: isHoveredc1 ? "scale(1.05)" : "scale(1)" }}>
-        <div className="card-body1"><br></br><br></br>
-          <h5 className="card-title1"></h5>
+      style={{ transform: isHoveredc1 ? "scale(1.05)" : "scale(1)",paddingLeft: '25px',marginRight: '30px'}}>
+        <div className="card-body" ><br></br><br></br>
+          <h5 className="card-title"></h5>
           <center><img src="https://img.freepik.com/premium-vector/continuous-one-line-drawing-happy-boy-take-photo-with-smartphone-travel-experience-concept-single-line-draw-design-vector-graphic-illustration_612079-1974.jpg?w=2000" alt="My Image"  style={imageStylec1} /></center><br></br>
           <center><b><p className="card-text1" style={{fontSize:'25px'}}>500+ Trips</p></b></center>
         </div>
       </div>
       <div className="card card1" onMouseEnter={handleMouseEnter1}
       onMouseLeave={handleMouseLeave1}
-      style={{ transform: isHoveredc2 ? "scale(1.05)" : "scale(1)" }}>
+      style={{ transform: isHoveredc2 ? "scale(1.05)" : "scale(1)",paddingLeft: '25px', paddingRight: '30px' }} >
         <div className="card-body1">
        
           <center><img src="https://media.istockphoto.com/id/1084243376/vector/star-like-hand-line-icon-feedback-rating-sign-vector.jpg?s=612x612&w=0&k=20&c=L5DgTEaP1-lpcwq8xnZjRwZCWD06575wArGbGcRREbo="  style={imageStylec2} /></center>
@@ -189,7 +186,7 @@ const [isHoveredc3, setIsHoveredc3] = useState(false);
       </div>
       <div className="card card1" onMouseEnter={handleMouseEnter2}
       onMouseLeave={handleMouseLeave2}
-      style={{ transform: isHoveredc3 ? "scale(1.05)" : "scale(1)" }}>
+      style={{ transform: isHoveredc3 ? "scale(1.05)" : "scale(1)",paddingLeft: '25px', marginLeft: '30px' }}>
         <div className="card-body1">
           <h5 className="card-title1"></h5><br></br><br></br>
           <center><img src="data:image/jpeg;base64,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" alt="My Image"  style={imageStylec3} /></center><br></br><br></br>
@@ -198,9 +195,7 @@ const [isHoveredc3, setIsHoveredc3] = useState(false);
       </div>
       </div>
     </div>
-    <div class="col-md-1">
-     
-    </div>
+  
   </div>
 </div>
 <br></br><br></br>
@@ -336,7 +331,7 @@ const [isHoveredc3, setIsHoveredc3] = useState(false);
 
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="https://media.istockphoto.com/id/1266651692/photo/houseboat-in-alappuzha-backwaters-kerala.jpg?b=1&s=170667a&w=0&k=20&c=BVVxjzeqLdreKBP1dM6iE-6Q7P1nHd2EQx_EbmD9Cac=" height={500} width={900}/>
+                                        <img class="img-fluid" alt="100%x280" src="https://media.istockphoto.com/id/1266651692/photo/houseboat-in-alappuzha-backwaters-kerala.jpg?b=1&s=170667a&w=0&k=20&c=BVVxjzeqLdreKBP1dM6iE-6Q7P1nHd2EQx_EbmD9Cac=" height={700} width={700}/>
                                         <div class="card-body">
                                         
                                         <h4 class="card-title" style={{float: 'left'}}>Kerala</h4><br></br>
@@ -449,8 +444,8 @@ const [isHoveredc3, setIsHoveredc3] = useState(false);
     </div>
 </section>
 <footer id="footer">
-      <h1><span>RK</span> Travels</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+      <h3><span>RK</span> Travels</h3>
+      <p>"RK Travels: Your gateway to unforgettable journeys and seamless adventures."</p>
       <div class="social-links">
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-facebook"></i>

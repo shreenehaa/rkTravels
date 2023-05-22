@@ -49,7 +49,7 @@ useEffect(()=>{
                 <p key={packages._id}>
 
             <Link to={`/New_page/${packages._id}`}>
-              <button className="btn btn-primary" onClick={() => handleClick(packages._id)} >Click me</button>
+              <button className="btn btn-primary but123" onClick={() => handleClick(packages._id)} >Click me</button>
             </Link>
                 </p>
                 </ul> 

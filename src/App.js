@@ -11,7 +11,7 @@ import Contact_Us from './components/Contact_us';
 import About_Us from './components/About_us';
 import Gallery from './components/Gallery';
 import Add_package from './components/Add_package';
-import Admin from './components/Admin';
+import Admin from './components/Adm';
 import Navbar1 from './components/Navbar1';
 import Services from './components/Services';
 import Login_user from './components/user/Login_user';
@@ -29,12 +29,13 @@ import User_services from './components/user/User_services';
 import User_Gallery from './components/user/User_Gallery';
 import User_Aboutus from './components/user/User_Aboutus';
 import Profile from './components/user/Profile';
+import Search from './components/Admin/Search';
 
 function App() {
   return (
   
     <BrowserRouter>
-     
+      {/* <Navbar/> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Package' element={
@@ -47,6 +48,7 @@ function App() {
         <div><Navbar1 /><Add_package /></div>} /> 
         <Route path="/New_page/:buttonValue" element={<New_page />} />
         <Route path='/Navbar1' element={<Navbar1 />} /> 
+        <Route path='/New_search' element={<Search />} /> 
        <Route path='/Admin' element={<Admin/>}></Route>
         <Route path='/Services' element={<Services />} />
         <Route path='/Login_user' element={<Login_user />} />  

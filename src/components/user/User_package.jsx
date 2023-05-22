@@ -43,19 +43,19 @@ const location=useLocation()
                 <div class="card-body">
                 <ul class="list-group list-group-flush">
                 {/* <li class="list-group-item"> title={packages._id}</li>  */}
-                  <li ><b>{packages.title}</b></li>
-                  <li ><i class="fas fa-clock" ></i>  {packages.days}</li>
-                   <li> <i class="fas fa-thumbtack"></i>  {packages.place}</li>
+                  <p ><b>{packages.title}</b></p>
+                  <p ><i class="fas fa-clock" ></i>  {packages.days}</p>
+                   <p> <i class="fas fa-thumbtack"></i>  {packages.place}</p>
                    {/* <li class="list-group-item"> place={packages._id}</li> */}
                    {/* id={packages._id} */}
                  
            
-                <li key={packages._id}>
+                <p key={packages._id}>
 
             <Link to={`/User_newpage/${packages._id}`}>
-              <button className="btn btn-primary" onClick={() => handleClick(packages._id)} >Click me</button>
+              <button className="btn btn-primary but123" onClick={() => handleClick(packages._id)} >View More</button>
             </Link>
-                </li>
+                </p>
                 </ul> 
               </div>
              </div>

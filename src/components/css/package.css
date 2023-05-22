@@ -24,4 +24,16 @@
     font-size: 1rem;
     color: #001e6b;
   }
+  .but123 {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
   

@@ -3,6 +3,7 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     width: 50%;
     margin-left: 300px;
+    background-color: white;
   }
   
   @media (max-width: 768px) {
@@ -12,4 +13,61 @@
       margin-right: auto;
     }
   }
+  .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 80%;
+    margin-bottom: 15px;
+  }
   
+  .icon {
+    padding: 10px;
+    background: #ffa500;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    padding-left: 10px;
+    align-items: center;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid #ffa500;
+  }
+  
+  /* Set a style for the submit button */
+  .but1 {
+    background-color: #ffa500;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+  }
+  
+  .but1:hover {
+    opacity: 1;
+  }
+  .bgimg {
+    background-image: url('https://nvm.edu.in/wp-content/uploads/2020/07/Background-website-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btn:hover {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+    
+  
+  .image {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+

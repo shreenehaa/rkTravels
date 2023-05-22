@@ -1,5 +1,5 @@
 import React from 'react';
-// import './css/services.css';
+import './css/services.css';
 import Navbar from './Navbar.js'
 
 export default function Services() {
@@ -140,6 +140,64 @@ export default function Services() {
             </div>
         </div>
     </div>
+    <div class="container">
+  <div class="row">
+  <h3 class="mb-1">Happy Clients: </h3><br></br><br></br><br></br>
+    <div class="col-sm">
+    <div class="card border-dark mb-3" style={{maxWidth:"25rem"}}>
+  <div class="card-header" style={{color:' #ffa500'}} ><b>KIRTANA VELAVAN"</b></div>
+  <div class="card-body ">
+   <h3> <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span></h3>
+    <p class="card-text " style={{fontFamily:'cursive'}}>"Varkala was an absolute delight, and our experience with RK Travels made it even more incredible. From the moment we arrived, everything was meticulously planned and executed by their team. The stunning beaches, mesmerizing cliffs, and the vibrant local culture of Varkala left us in awe. The accommodations arranged by RK Travels were top-notch, and their attention to detail ensured our comfort and satisfaction throughout the trip. We were able to explore the hidden gems of Varkala with the guidance of their knowledgeable and friendly staff. RK Travels truly exceeded our expectations, and we highly recommend them for an unforgettable Varkala experience."</p>
+  </div>
+</div>
+    </div>
+    <div class="col-sm">
+    <div class="card border-dark mb-3" style={{maxWidth:"30rem"}}>
+  <div class="card-header" style={{color:' #ffa500'}}><b>VINOTH KUMAR"</b></div>
+  <div class="card-body ">
+    <h5 class="card-title"> <h3> <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span></h3></h5>
+    <p class="card-text" style={{fontFamily:'cursive'}}>"Our trip to Mysore with RK Travels was an absolute delight. The rich cultural heritage, majestic palaces, and vibrant markets of Mysore left us mesmerized. RK Travels meticulously planned every aspect of our journey, ensuring a seamless and immersive experience. The knowledgeable guides provided fascinating insights into the history and significance of each attraction, making our visit all the more enriching. The comfortable transportation and well-chosen accommodations added to our convenience and comfort. We are grateful to RK Travels for their exceptional service and for creating beautiful memories that will last a lifetime."</p>
+  </div>
+</div>
+    </div>
+    <div class="col-sm">
+    <div class="card border-dark mb-3" style={{maxWidth:"30rem"}}>
+  <div class="card-header" style={{color:' #ffa500'}}><b>Aravindh Raj"</b></div>
+  <div class="card-body">
+    <h3 class="card-title"><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span></h3>
+    <p class="card-text" style={{fontFamily:'cursive'}}>"Embarking on a spiritual journey to Thirupathi with RK Travels was a truly divine experience. Their impeccable service, attention to detail, and expert planning made our pilgrimage seamless and meaningful. The knowledgeable guides provided insightful information about the sacred sites and rituals, enhancing our understanding and connection to the spiritual heritage of Thirupathi. The comfortable accommodations and efficient transportation arrangements ensured our convenience and peace of mind throughout the trip.RK Travels exceeded our expectations, and we are grateful for their dedication in making our Thirupathi pilgrimage a truly unforgettable and fulfilling experience."</p>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<footer id="footer">
+      <h3><span>RK</span> Travels</h3>
+      <p>"RK Travels: Your gateway to unforgettable journeys and seamless adventures."</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="copyright">
+        <p>Further Queries Contact : +91 - 98765 54321</p>
+      </div>
+    </footer>
 </section>
 </>
   )

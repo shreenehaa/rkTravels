@@ -28,8 +28,8 @@ export default function Navbar1() {
                <li class="nav-item">
                <Link to='/All_booking' class="nav-link">view booking</Link>
               </li>
-              <li class="nav-item"><Link to='/View_enquiry' class="nav-link">
-              view enquiry</Link>
+              <li class="nav-item"><Link to='/New_search' class="nav-link">
+              Search</Link>
               </li>
              </ul>
         </div>
